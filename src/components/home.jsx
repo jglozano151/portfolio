@@ -31,7 +31,8 @@ const projects = [
     title: 'Socket Chess',
     description: 'Real-time chess games with Socket.io',
     image: Preview1,
-    github: "https://github.com/jglozano151/chess",
+    github: "https://github.com/jglozano151/socketchess",
+    live: "https://impartial-finger.surge.sh"
   },
   {
     title: 'Stock Analysis',
@@ -76,12 +77,10 @@ const messages = [
 const Home = () => {
   return (
   <div style = {{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-    <div style = {{backgroundSize: 'cover', width: '100%', backgroundImage: `url(${background})`}}> 
-      <div style = {{marginTop: 280, textAlign: 'center'}}>
-        <Typography variant = "display3" style = {{color: '#ededed', textShadow: '2px black', marginBottom: 250}}> <b> Joseph Lozano </b> </Typography>
-        <Typography variant = "h4" style = {{color: 'white', marginBottom: 25}}> Software Engineer | New York City, NY </Typography>
-      </div>
-    </div> 
+    <div style = {{textAlign: 'center'}}>
+      <Typography variant = "display2" style = {{color: '#232323', textShadow: '2px black', marginTop: 90, marginBottom: 25}}> <b> Joseph Lozano </b> </Typography>
+      <Typography variant = "h5" style = {{color: '#232323', marginBottom: 25}}> Software Engineer | New York City, NY </Typography>
+    </div>
     {/* Objective/Background section */}
     <div style = {{display: 'flex', margin: 25, maxWidth: 1200}}> 
       <div>
@@ -103,9 +102,6 @@ const Home = () => {
           <Typography variant = "subheading" style = {{fontFamily: 'Roboto', textAlign: 'justify', marginBottom: 20}}> {messages[2][1]} </Typography> 
           <div style = {{marginTop: 25}}> 
             <Typography variant = "title" style = {{fontFamily: 'Oxygen', marginBottom: 15}}> Small Projects/Games: </Typography> 
-            <NavLink to =  {'/tic_tac_toe'} style = {{textDecoration: 'none', marginBottom: 25}}>
-              <Button size = "large" style = {{backgroundColor: '#3b3f47', color: '#ededed'}} variant = "contained"> Tic Tac Toe </Button>
-            </NavLink>
           </div> 
         </div> 
       </div> 

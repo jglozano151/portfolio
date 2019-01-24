@@ -26,6 +26,7 @@ export default class TicTacToe extends Component {
   }
   checkGrid = () => {
     let grid = this.state.grid;
+    let inProgress = false;
     for (let row = 0; row < 3; row ++) {
       for (let col = 0; col < 3; col ++) {
         // Checking down the column
@@ -36,6 +37,7 @@ export default class TicTacToe extends Component {
         if (grid[row][col] != null && grid[row][0] === grid[row][1] && grid[row][1] === grid[row][2]) {
           this.setState({winner: grid[row][col] === 'X' ? 'X' : 'O', gameOver: true})
         }
+        if (grid[row][col] == null) inProgress = true; 
       }
     }
     // Check each row
