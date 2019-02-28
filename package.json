@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://jglozano.github.io/profile", 
+  "homepage": "http://jglozano.github.io/portfolio", 
   "dependencies": {
     "@material-ui/core": "^3.6.1",
     "react": "^16.6.3",
